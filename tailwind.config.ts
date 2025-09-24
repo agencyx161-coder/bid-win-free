@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -55,9 +58,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        auction: {
-          gold: "hsl(var(--auction-gold))",
-          blue: "hsl(var(--auction-blue))",
+        brand: {
+          DEFAULT: "hsl(var(--brand))",
+          2: "hsl(var(--brand-2))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -71,12 +74,13 @@ export default {
         },
       },
       backgroundImage: {
-        'auction-premium': 'var(--auction-premium)',
-        'auction-gold-gradient': 'var(--auction-gold-gradient)',
+        'brand-gradient': 'var(--brand-gradient)',
+        'accent-gradient': 'var(--accent-gradient)',
       },
       boxShadow: {
         'premium': 'var(--shadow-premium)',
         'auction': 'var(--shadow-auction)',
+        'glow': 'var(--shadow-glow)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',
